@@ -8,5 +8,9 @@ public class Artist extends Visitor {
 		this.artistName = artistName;
 	}
 	
+	//get artist name 
+	public static String getArtistName() {
+		return artistName;
+	}
 	
 }
