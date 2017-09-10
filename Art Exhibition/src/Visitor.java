@@ -11,17 +11,17 @@ public class Visitor {
 		this.email		=	email;
 	}
 	
-	//get the fullname of the vistor
+	//get the full name of the visitor
 	public static String getFullName() {
 		return (firstName + " " + lastName);
 	}
 	
-	//get the firstname of the vistor
+	//get the first name of the visitor
 	public static String getFirstName() {
 		return firstName;
 	}
 	
-	//get the lastname of the vistor
+	//get the last name of the visitor
 	public static String getLastname() {
 		return lastName;
 	}
