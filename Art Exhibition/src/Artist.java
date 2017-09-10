@@ -7,4 +7,6 @@ public class Artist extends Visitor {
 		super(firstName,lastName,email);
 		this.artistName = artistName;
 	}
+	
+	
 }
