@@ -3,7 +3,8 @@ public class Artwork {
 	
 	public static String artName;
 	public static String artist;
-	//public static String locaction;
+	//public static String location
+	//public static String image
 	public static double price;
 	public static boolean forSale;
 	
