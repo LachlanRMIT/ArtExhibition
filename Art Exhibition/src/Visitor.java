@@ -10,4 +10,21 @@ public class Visitor {
 		this.lastName	=	lastName;
 		this.email		=	email;
 	}
+	
+	//get the fullname of the vistor
+	public static String getFullName() {
+		return (firstName + " " + lastName);
+	}
+	
+	//get the firstname of the vistor
+	public static String getFirstName() {
+		return firstName;
+	}
+	
+	//get the lastname of the vistor
+	public static String getLastname() {
+		
+	}
+	
+	//get the email of the visitor
 }
