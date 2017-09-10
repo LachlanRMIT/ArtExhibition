@@ -23,7 +23,7 @@ public class Visitor {
 	
 	//get the lastname of the vistor
 	public static String getLastname() {
-		
+		return lastName;
 	}
 	
 	//get the email of the visitor
