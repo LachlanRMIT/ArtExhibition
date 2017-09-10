@@ -27,4 +27,7 @@ public class Visitor {
 	}
 	
 	//get the email of the visitor
+	public static String getEmail() {
+		return email;
+	}
 }
