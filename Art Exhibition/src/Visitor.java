@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Visitor {
 	
@@ -29,6 +30,14 @@ public class Visitor {
 	//get the email of the visitor
 	public static String getEmail() {
 		return email;
+	}
+	
+	//select artwork
+	public static void selectArtwork(int choice) {
+		Gallery gallery = veiwGallery();
+		Artwork artwork;
+		artwork = gallery.gallery.get(choice);
+		
 	}
 	
 	//Displays Artwork Gallery
