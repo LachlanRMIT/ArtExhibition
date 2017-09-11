@@ -30,4 +30,10 @@ public class Visitor {
 	public static String getEmail() {
 		return email;
 	}
+	
+	//Displays Artwork Gallery
+	public static Gallery veiwGallery() {
+		Gallery gallery = new Gallery();
+		return gallery;
+	}
 }
