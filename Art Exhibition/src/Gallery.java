@@ -18,12 +18,15 @@ public class Gallery {
 		displayGallery();
 	}
 	
+<<<<<<< HEAD
 	public static void searchGallery(String title,String artist) {
 		titleSearch = title + titleSearch;
 		artistSearch = artist + artistSearch;
 		displayGallery();
 	}
 	
+=======
+>>>>>>> 7d32f5fec9303a8074089a744fd6ddc8b2f15907
 	//select artwork
 	public static Artwork selectArtwork(int choice) {
 		Artwork artwork =null;
