@@ -6,8 +6,9 @@ import java.util.ArrayList;
 public class Gallery {
 	
 	private static final String FILE_NAME = "C:\\Users\\Lachlan Newman\\git\\ArtExhibition\\Art Exhibition\\src\\resources\\artworks.txt";
-	public static ArrayList<Artwork> gallery = new ArrayList<Artwork>();
 	private static final int NUM_ART_INPUTS = 4;
+	
+	public static ArrayList<Artwork> gallery = new ArrayList<Artwork>();
 	
 	public Gallery() {
 		fillGallery();
@@ -32,7 +33,6 @@ public class Gallery {
 
 		try {
 
-			//br = new BufferedReader(new FileReader(FILENAME));
 			file = new FileReader(FILE_NAME);
 			readFile = new BufferedReader(file);
 			String Line;
