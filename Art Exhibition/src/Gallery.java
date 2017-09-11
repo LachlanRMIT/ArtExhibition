@@ -10,20 +10,49 @@ public class Gallery {
 	
 	public static ArrayList<Artwork> gallery = new ArrayList<Artwork>();
 	
+	public static String titleSearch = ".*";
+	public static String artistSearch = ".*";
+	
 	public Gallery() {
 		fillGallery();
 		displayGallery();
 	}
 	
-	public static void displayGallery() {
-		for(int i = 0;i<gallery.size();i++) {
-			System.out.println(i + ").");
-			System.out.println("Title: "  + gallery.get(i).title);
-			System.out.println("Artist: " + gallery.get(i).artist);
-			System.out.println("Price: "  + gallery.get(i).price);
-			System.out.println("For Sale" + gallery.get(i).forSale);
-			System.out.println("\n");
+	public static void searchGallery(String title,String artist) {
+		titleSearch = title + titleSearch;
+		artistSearch = artist + artistSearch;
+		displayGallery();
+	}
+	
+	//select artwork
+	public static Artwork selectArtwork(int choice) {
+		Artwork artwork =null;
+		try{
+			artwork = gallery.get(choice);
 		}
+		catch(IndexOutOfBoundsException e) {
+			e.printStackTrace();
+		}
+		
+		return artwork;
+	}
+	
+	
+	public static void displayGallery() {
+		Artwork artwork;
+		for(int i = 0;i<gallery.size();i++) {
+			artwork = gallery.get(i);
+			if(artwork.title.matches(titleSearch) && artwork.artist.matches(artistSearch)) {
+				System.out.println(i + ").");
+				System.out.println("Title: "  + artwork.title);
+				System.out.println("Artist: " + artwork.artist);
+				System.out.println("Price: "  + artwork.price);
+				System.out.println("For Sale" + artwork.forSale);
+				System.out.println("\n");
+			}
+		}
+		titleSearch = ".*";
+		artistSearch= ".*";
 	}
 	
 	public static void fillGallery() {

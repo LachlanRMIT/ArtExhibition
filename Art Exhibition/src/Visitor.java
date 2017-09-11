@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Visitor {
 	
 	public static String firstName;
@@ -32,17 +30,8 @@ public class Visitor {
 		return email;
 	}
 	
-	//select artwork
-	public static void selectArtwork(int choice) {
-		Gallery gallery = veiwGallery();
-		Artwork artwork;
-		artwork = gallery.gallery.get(choice);
-		
-	}
-	
 	//Displays Artwork Gallery
 	public static Gallery veiwGallery() {
-		Gallery gallery = new Gallery();
-		return gallery;
+		return (new Gallery());
 	}
 }

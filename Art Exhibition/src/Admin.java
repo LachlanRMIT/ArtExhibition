@@ -1,14 +1,22 @@
+import java.util.Scanner;
 
-public class Admin {
+public class Admin extends Visitor {
+	
+	private static final String PASSWORD = "test";
 
-	private static final String PASSWORD = "JUPITER1";
-	public Admin(String password) {
+	public Admin(String firstName, String lastName, String email,String password) {
+		super(firstName, lastName, email);
 		if(!password.equals(PASSWORD)) {
-			System.out.println("Incorrect Password");
-			System.exit(1);
+			System.exit(-1);
 		}
+		
 	}
 	
+	//update artworks TODO
 	
+	//add new artworks TODO
+	
+	//update event info TODO
+
 
 }

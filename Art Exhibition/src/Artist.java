@@ -13,4 +13,6 @@ public class Artist extends Visitor {
 		return artistName;
 	}
 	
+	//get artworks by artist TODO
+	
 }
