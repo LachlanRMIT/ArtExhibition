@@ -15,6 +15,20 @@ public class Gallery {
 		displayGallery();
 	}
 	
+	//select artwork
+	public static Artwork selectArtwork(int choice) {
+		Artwork artwork =null;
+		try{
+			artwork = gallery.get(choice);
+		}
+		catch(IndexOutOfBoundsException e) {
+			e.printStackTrace();
+		}
+		
+		return artwork;
+	}
+	
+	
 	public static void displayGallery() {
 		for(int i = 0;i<gallery.size();i++) {
 			System.out.println(i + ").");
